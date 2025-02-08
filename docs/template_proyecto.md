@@ -45,7 +45,7 @@ Incluir el diseño y la estructura de la base de datos.
 
 # 7. Decisiones Arquitectónicas Clave 
 ## 7.1. Registro de Decisiones
-Registrar las decisiones arquitectónicas clave tomadas y la justificación detrás de ellas.
+Registrar las decisiones arquitectónicas clave tomadas y la justificación detrás de ellas (Pros/Contras).
 
 # 8. Atributos de Calidad 
 ## 8.1. Rendimiento

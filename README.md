@@ -1,2 +1,2 @@
 # Arquitectura
-Curso de Ariquitectura de Software UCENFOTEC
+Curso de Arquitectura de Software UCENFOTEC

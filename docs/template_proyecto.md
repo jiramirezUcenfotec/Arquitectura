@@ -52,20 +52,20 @@ Registrar las decisiones arquitectónicas clave tomadas y la justificación detr
 Describir los requisitos de rendimiento y cómo la arquitectura los respalda.
 
 ## 8.2. Escalabilidad
-Discutir las consideraciones y estrategias de escalabilidad.
+Describir las consideraciones y estrategias de escalabilidad.
 
 ## 8.3. Seguridad
-Esbozar las medidas de seguridad y consideraciones dentro de la arquitectura.
+Describir las medidas de seguridad y consideraciones dentro de la arquitectura.
 
 ## 8.4. Mantenibilidad
-Discutir cómo se ha diseñado el sistema para facilitar su mantenimiento.
+Describir cómo se ha diseñado el sistema para facilitar su mantenimiento.
 
 # 9. Riesgos y Deuda Técnica 
 ## 9.1. Riesgos Identificados
 Enumerar los riesgos identificados y su posible impacto en el proyecto.
 
 ## 9.2. Deuda Técnica
-Discutir cualquier área de deuda técnica y los planes para su resolución.
+Describir cualquier área de deuda técnica y los planes para su resolución.
 
 # 10. Apéndices 
 ##10.1. Glosario

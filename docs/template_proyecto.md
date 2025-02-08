@@ -41,7 +41,7 @@ Proporcionar un resumen de las capas o módulos del sistema.
 Incluir cualquier diagrama de componentes relevante que ilustre partes significativas del sistema.
 
 ## 6.3 Diseño de la Base de Datos
-Esbozar el diseño y la estructura de la base de datos.
+Incluir el diseño y la estructura de la base de datos.
 
 # 7. Decisiones Arquitectónicas Clave 
 ## 7.1. Registro de Decisiones

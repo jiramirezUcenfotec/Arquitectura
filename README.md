@@ -9,4 +9,4 @@
 
 ## Ejercicios de Clase
 
-1. [Clase-4](Ejercicios_Clase/Clase_4)
+1. [Clase-4](ejercicios_clase/clase_4)

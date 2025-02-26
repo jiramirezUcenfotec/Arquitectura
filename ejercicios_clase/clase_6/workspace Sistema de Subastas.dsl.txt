@@ -1,0 +1,100 @@
+workspace "Sistema de Subastas" "Un sistema de subastas en línea básico" {
+
+    model {
+        # Actores
+        comprador = person "Comprador" {
+            description "Un usuario que participa en subastas como comprador."
+        }
+
+        vendedor = person "Vendedor" {
+            description "Un usuario que publica artículos para subastar."
+        }
+
+        administrador = person "Administrador" {
+            description "Un administrador que gestiona el sistema de subastas."
+        }
+
+        # Sistema interno
+        sistemaSubastas = softwareSystem "Sistema de Subastas" {
+            description "El sistema de subastas en línea."
+
+            # Contenedores
+            webApp = container "Aplicación Web" {
+                description "La aplicación web que permite a los usuarios interactuar con el sistema."
+                technology "JavaScript y Node.js"
+
+                # Componentes
+                controladorWeb = component "Controlador Web" {
+                    description "Maneja las solicitudes HTTP relacionadas con las subastas."
+                    technology "Express.js"
+                }
+
+                servicioSubastas = component "Servicio de Subastas" {
+                    description "Gestiona la lógica de negocio relacionada con las subastas."
+                    technology "Node.js"
+                }
+
+                accesoDatos = component "Acceso a Datos" {
+                    description "Gestiona el acceso a la base de datos."
+                    technology "MySQL Connector"
+                }
+            }
+
+            baseDatos = container "Base de Datos" {
+                description "Almacena la información de las subastas, usuarios y artículos."
+                technology "MySQL"
+            }
+
+            # Relaciones
+            comprador -> webApp "Usa"
+            vendedor -> webApp "Usa"
+            administrador -> webApp "Gestiona"
+            controladorWeb -> servicioSubastas "Usa"
+            servicioSubastas -> accesoDatos "Usa"
+            accesoDatos -> baseDatos "Lee y escribe"
+        }
+    }
+
+    views {
+        systemContext sistemaSubastas {
+            include *
+            autolayout lr
+        }
+
+        container sistemaSubastas {
+            include *
+            autolayout lr
+        }
+
+        component webApp {
+            include *
+            autolayout lr
+        }
+
+        theme default
+
+        styles {
+            element "SoftwareSystem" {
+                background "#1168bd"
+                color "#ffffff"
+            }
+            element "Container" {
+                background "#438dd4"
+                color "#ffffff"
+            }
+            element "Component" {
+                background "#85bbf0"
+                color "#000000"
+            }
+            element "Person" {
+                background "#08427b"
+                color "#ffffff"
+                shape person
+            }
+        }
+    }
+
+    configuration {
+        scope softwareSystem
+    }
+}

@@ -1,12 +1,29 @@
-# Curso de Arquitectura de Software - UCENFOTEC - C1_2025
+# authors - section only for the course
+- Daniel Canessa Valverde
+- Verny Alonso Alfaro M.
+- Shirley Ramírez Cordero
 
-## Documentación del proyecto
+# Title 
+- Elección del protocolo de comunicación para los servicios JSON vs. GRPC.
 
-1. [Documento de requerimientos](Proyecto/docs/template_requerimientos.md)
-1. [Documentos de arquitectura](Proyecto/docs/template_proyecto.md)
-1. [Links de referencia](Proyecto/referencias/links.md)
+# Status
+- Propuesta
 
+# Context
+- El negocio solicita la reducción de costos de comunicación de servicios de la nube
 
-## Ejercicios de Clase
+# Decision
+- Utilizar GRPC
 
-1. [Clase-4](ejercicios_clase/clase_4)
+# Consequences
+- Pros: el trasiego de los datos es menor en bits transmitidos que JSON y que se traduce en un menor costo de trasiego de información.
+
+- Contras: GRPC obliga al cliente/servidor a tener una comunicación tipada y fuertemente acoplada.
+
+# Compliance
+- Validado con una prueba de servicios en JSON vs GRPC.
+
+# Notes
+- enlace a pruebas
+- https://es.wikipedia.org/wiki/JSON
+
